@@ -1,0 +1,81 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.alinhamento {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin: 20px;
+    padding: 50px;
+}
+
+h1 {
+    background-color: lightgreen;
+    border: 5px solid yellow;
+    padding: 40px;
+    text-align: center;
+    font-style: oblique;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+p,.texto {
+   border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: yellow;
+}
+
+h2 {
+    display: inline;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: lightgreen;
+    color: blue;
+}
+
+
+.links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 30px;
+    margin-left: -10px;
+} 
+
+a {
+    text-decoration: none;
+    border: 1px, solid black;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: black;
+    color:white;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+
+
+
+
+
