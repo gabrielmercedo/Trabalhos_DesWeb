@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Aluno</title>
+</head>
+
+<link rel="stylesheet" href="Css/form.css">
+
+<body>
+
+  <form action="#" method="post" autocomplete="on">
+
+    <div class="titulo">
+        <h1>Cadastro de Aluno</h1>
+        <p>Preencha os dados abaixo para realizar a matrícula.</p>
+    </div>
+
+    <fieldset>
+      <legend>Dados pessoais</legend>
+
+      <label for="nome">Nome completo</label><br>
+      <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required><br><br>
+
+      <label for="nascimento">Data de nascimento</label><br>
+      <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+      <label for="cpf">CPF</label><br>
+      <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required><br><br>
+
+      <label for="rg">RG</label><br>
+      <input type="text" id="rg" name="rg" placeholder="Digite o RG"><br><br>
+
+      <label for="sexo">Sexo</label><br>
+      <select id="sexo" name="sexo">
+        <option value="">Selecione</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+        <option value="outro">Outro</option>
+        <option value="nao_informar">Prefiro não informar</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Contato</legend>
+
+      <label for="email">E-mail</label><br>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+      <label for="telefone">Telefone</label><br>
+      <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
+
+      <label for="endereco">Endereço</label><br>
+      <input type="text" id="endereco" name="endereco" placeholder="Rua, número e bairro" required><br><br>
+
+      <label for="cidade">Cidade</label><br>
+      <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade"><br><br>
+
+      <label for="estado">Estado</label><br>
+      <select id="estado" name="estado">
+        <option value="">Selecione</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="ba">Bahia</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Dados acadêmicos</legend>
+
+      <label for="matricula">Número de matrícula</label><br>
+      <input type="text" id="matricula" name="matricula" placeholder="Ex: 202600123"><br><br>
+
+      <label for="curso">Curso</label><br>
+      <select id="curso" name="curso" required>
+        <option value="">Selecione o curso</option>
+        <option value="administracao">Administração</option>
+        <option value="direito">Direito</option>
+        <option value="engenharia_software">Engenharia de Software</option>
+        <option value="ciencia_dados">Ciência de Dados e IA</option>
+        <option value="psicologia">Psicologia</option>
+      </select><br><br>
+
+      <label for="periodo">Período</label><br>
+      <select id="periodo" name="periodo">
+        <option value="">Selecione</option>
+        <option value="1">1º período</option>
+        <option value="2">2º período</option>
+        <option value="3">3º período</option>
+        <option value="4">4º período</option>
+        <option value="5">5º período</option>
+      </select><br><br>
+
+      <p>Turno</p>
+      <div class="radio">
+        <label class="radios"><input type="radio" name="turno" value="manha" required>
+            Manhã</label>
+        <label  class="radios"><input type="radio" name="turno" value="tarde"> 
+            Tarde</label>
+        <label  class="radios"><input type="radio" name="turno" value="noite"> 
+            Noite</label>
+        </div>
+
+      <label style="margin-top: 20px" for="modalidade">Modalidade</label><br>
+      <select id="modalidade" name="modalidade">
+        <option value="">Selecione</option>
+        <option value="presencial">Presencial</option>
+        <option value="ead">EAD</option>
+        <option value="hibrido">Híbrido</option>
+      </select>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Responsável</legend>
+
+      <label for="responsavel">Nome do responsável</label><br>
+      <input type="text" id="responsavel" name="responsavel" placeholder="Obrigatório para menores de idade"><br><br>
+
+      <label for="telefone_responsavel">Telefone do responsável</label><br>
+      <input type="tel" id="telefone_responsavel" name="telefone_responsavel" placeholder="(00) 00000-0000">
+    </fieldset>
+
+
+
+    <fieldset>
+      <legend>Informações complementares</legend>
+
+      <label for="observacoes">Observações</label><br>
+      <textarea id="observacoes" name="observacoes" rows="5" cols="40" placeholder="Digite informações adicionais"></textarea><br><br>
+
+      <div class="checkbox">
+        <label class="label_check">
+            <input type="checkbox" name="bolsa" value="sim">
+            Desejo concorrer a bolsa
+        </label>
+
+        <label class="label_check"> 
+            <input type="checkbox" name="termos" value="aceito" required>
+            Declaro que as informações são verdadeiras e aceito os termos
+        </label>
+      </div>
+    </fieldset>
+
+    <button type="submit">Finalizar cadastro</button>
+    <button type="reset">Limpar formulário</button>
+
+  </form>
+
+</body>
+</html>
