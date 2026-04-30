@@ -6,13 +6,11 @@
   <title>Cadastro de Aluno</title>
 </head>
 
-<link rel="stylesheet" href="Css/form.css">
-
 <body>
 
   <form action="#" method="post" autocomplete="on">
 
-    <div class="titulo">
+    <div>
         <h1>Cadastro de Aluno</h1>
         <p>Preencha os dados abaixo para realizar a matrícula.</p>
     </div>
@@ -98,16 +96,16 @@
       </select><br><br>
 
       <p>Turno</p>
-      <div class="radio">
-        <label class="radios"><input type="radio" name="turno" value="manha" required>
+      <div>
+        <label><input type="radio" name="turno" value="manha" required>
             Manhã</label>
-        <label  class="radios"><input type="radio" name="turno" value="tarde"> 
+        <label><input type="radio" name="turno" value="tarde"> 
             Tarde</label>
-        <label  class="radios"><input type="radio" name="turno" value="noite"> 
+        <label><input type="radio" name="turno" value="noite"> 
             Noite</label>
         </div>
 
-      <label style="margin-top: 20px" for="modalidade">Modalidade</label><br>
+      <label for="modalidade">Modalidade</label><br>
       <select id="modalidade" name="modalidade">
         <option value="">Selecione</option>
         <option value="presencial">Presencial</option>
@@ -135,13 +133,13 @@
       <label for="observacoes">Observações</label><br>
       <textarea id="observacoes" name="observacoes" rows="5" cols="40" placeholder="Digite informações adicionais"></textarea><br><br>
 
-      <div class="checkbox">
-        <label class="label_check">
+      <div>
+        <label>
             <input type="checkbox" name="bolsa" value="sim">
             Desejo concorrer a bolsa
         </label>
 
-        <label class="label_check"> 
+        <label> 
             <input type="checkbox" name="termos" value="aceito" required>
             Declaro que as informações são verdadeiras e aceito os termos
         </label>
